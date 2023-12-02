@@ -1,8 +1,8 @@
-package main
+package day1
 
 import "fmt"
 
-func main() {
+func Day1() {
 	//getCalibrationNumberFromFile()
 	//getCalibrationNumberFromFile2()
 	//testgetDigitIndexFromString()
