@@ -17,10 +17,12 @@ The newly-improved calibration document consists of lines of text; each line ori
 
 For example:
 
+```
 1abc2
 pqr3stu8vwx
 a1b2c3d4e5f
 treb7uchet
+```
 
 In this example, the calibration values of these four lines are 12, 38, 15, and 77. Adding these together produces 142.
 
@@ -31,6 +33,7 @@ Your calculation isn't quite right. It looks like some of the digits are actuall
 
 Equipped with this new information, you now need to find the real first and last digit on each line. For example:
 
+```
 two1nine
 eightwothree
 abcone2threexyz
@@ -38,6 +41,7 @@ xtwone3four
 4nineeightseven2
 zoneight234
 7pqrstsixteen
+```
 In this example, the calibration values are 29, 83, 13, 24, 42, 14, and 76. Adding these together produces 281.
 
 What is the sum of all of the calibration values?
@@ -55,11 +59,13 @@ You play several games and record the information from each game (your puzzle in
 
 For example, the record of a few games might look like this:
 
+```
 Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
 Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
 Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
 Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
 Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
+```
 In game 1, three sets of cubes are revealed from the bag (and then put back again). The first set is 3 blue cubes and 4 red cubes; the second set is 1 red cube, 2 green cubes, and 6 blue cubes; the third set is only 2 green cubes.
 
 The Elf would first like to know which games would have been possible if the bag contained only 12 red cubes, 13 green cubes, and 14 blue cubes?
@@ -75,11 +81,13 @@ As you continue your walk, the Elf poses a second question: in each game you pla
 
 Again consider the example games from earlier:
 
+```
 Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
 Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
 Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
 Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
 Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
+```
 In game 1, the game could have been played with as few as 4 red, 2 green, and 6 blue cubes. If any color had even one fewer cube, the game would have been impossible.
 Game 2 could have been played with a minimum of 1 red, 3 green, and 4 blue cubes.
 Game 3 must have been played with at least 20 red, 13 green, and 6 blue cubes.
@@ -88,3 +96,34 @@ Game 5 needed no fewer than 6 red, 3 green, and 2 blue cubes in the bag.
 The power of a set of cubes is equal to the numbers of red, green, and blue cubes multiplied together. The power of the minimum set of cubes in game 1 is 48. In games 2-5 it was 12, 1560, 630, and 36, respectively. Adding up these five powers produces the sum 2286.
 
 For each game, find the minimum set of cubes that must have been present. What is the sum of the power of these sets?
+
+## --- Day 3: Gear Ratios ---
+You and the Elf eventually reach a gondola lift station; he says the gondola lift will take you up to the water source, but this is as far as he can bring you. You go inside.
+
+It doesn't take long to find the gondolas, but there seems to be a problem: they're not moving.
+
+"Aaah!"
+
+You turn around to see a slightly-greasy Elf with a wrench and a look of surprise. "Sorry, I wasn't expecting anyone! The gondola lift isn't working right now; it'll still be a while before I can fix it." You offer to help.
+
+The engineer explains that an engine part seems to be missing from the engine, but nobody can figure out which one. If you can add up all the part numbers in the engine schematic, it should be easy to work out which part is missing.
+
+The engine schematic (your puzzle input) consists of a visual representation of the engine. There are lots of numbers and symbols you don't really understand, but apparently any number adjacent to a symbol, even diagonally, is a "part number" and should be included in your sum. (Periods (.) do not count as a symbol.)
+
+Here is an example engine schematic:
+
+```
+467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..
+```
+In this schematic, two numbers are not part numbers because they are not adjacent to a symbol: 114 (top right) and 58 (middle right). Every other number is adjacent to a symbol and so is a part number; their sum is 4361.
+
+Of course, the actual engine schematic is much larger. What is the sum of all of the part numbers in the engine schematic?
