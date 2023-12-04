@@ -16,4 +16,6 @@ func Day4() {
 		sum += score
 	}
 	fmt.Println("Sum: ", sum)
+
+	fmt.Println("Total cards: ", funAux(cards))
 }
